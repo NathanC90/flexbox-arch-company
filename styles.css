@@ -1,0 +1,211 @@
+
+/* 1. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* 2. General Font Styles */
+
+.logo,
+.featured-projects > h2,
+.recent-news > h2 {
+    font-weight: 200;
+}
+
+.object-name,
+.news-number,
+#be-in-touch {
+    font-family: "Anti Didone";
+}
+
+/* 3. Shared Styles  */
+
+.featured-projects,
+.recent-news {
+    width: 1100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.featured-projects > h2,
+.recent-news > h2 {
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+/* 4. Header styles */
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    font-size: 1.25rem;
+}
+
+.container ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+
+.container ul li a {
+    color: black;
+    font-family: "Anti Didone";
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+/* 5. Main Content */
+
+.main-content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.banner img {
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 6. Featured Projects */
+
+.project-1,
+.project-2,
+.project-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.object-name {
+    text-align: center;
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.project-1 > *,
+.project-2 > *,
+.project-3 > * {
+    flex: 0 1 28%;
+}
+
+.project-2 {
+    flex-direction: row-reverse;
+}
+
+/* 7. Recent News */
+
+.news-section {
+    display: flex;
+    gap: 10px;
+}
+
+.news-card {
+    flex: 0 1 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.news-number {
+    font-size: 2rem;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.news-date {
+    font-size: 1.2rem;
+}
+
+.news-summary {
+    font-size: 1.8rem;
+    font-weight: 100;
+    height: 100%;
+}
+
+/* 8. Footer Section */
+
+footer {
+    background-color: darkslategrey;
+    color: white;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#be-in-touch {
+    font-size: 3rem;
+    width: 120px;
+    height: 120px;
+    font-style: italic;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.7;
+    align-items: flex-start;
+    font-weight: 100;
+}
+
+.socials a {
+    padding: 5px;
+    color: white;
+}
+
+.socials a:hover {
+    color: darkslategrey;
+    background-color: white;
+    text-decoration: none;
+}
+
+/* Other Links */
+
+.more-projects:hover,
+.news-link:hover {
+    font-weight: bold;
+}
